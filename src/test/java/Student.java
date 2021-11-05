@@ -1,7 +1,13 @@
+@Table(name="student")
 public class Student {
+    @Id
+    @Column(name="id")
     private String id;
+    @Column(name="name")
     private String name;
+    @Column(name="address")
     private String address;
+    @Column(name="contact_number")
     private String contactNumber;
 
     public Student() {
