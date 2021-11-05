@@ -1,5 +1,7 @@
+import java.io.Serializable;
+
 @Table(name="student")
-public class Student {
+public class Student implements Serializable {
     @Id
     @Column(name="id")
     private String id;
